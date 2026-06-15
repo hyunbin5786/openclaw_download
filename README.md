@@ -11,8 +11,8 @@
 터미널을 열고 아래 3줄을 순서대로 입력하세요.
 
 ```bash
-git clone https://github.com/[YOUR_REPO]
-cd [YOUR_REPO]
+git clone https://github.com/openclaw_download
+cd openclaw_download
 bash setup.sh
 ```
 
