@@ -41,9 +41,9 @@ node -v && npm -v
 echo ""
 echo "▶ [3/4] OpenClaw 설치 중..."
 if ! command -v openclaw &>/dev/null; then
-  sudo curl -fsSL https://openclaw.ai/install.sh | bash
+  sudo npm install -g openclaw@2026.6.6 --unsafe-perm
   source ~/.zprofile 2>/dev/null || true
-  echo "✅ OpenClaw 설치 완료"
+  echo "✅ OpenClaw 2026.6.6 설치 완료"
 else
   echo "✅ OpenClaw 이미 설치되어 있음 — 건너뜀"
 fi
