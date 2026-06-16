@@ -59,7 +59,7 @@ fi
 echo ""
 echo "=================================================="
 echo "  🎉 설치 완료!"
-echo "  터미널에서 아래 명령어로 설정을 시작하세요:"
+echo "  현재 터미널을 닫고 새로운 터미널에서 아래 명령어로 설정을 시작하세요:"
 echo ""
 echo "    sudo chown -R $(whoami) ~/.openclaw"
 echo "    openclaw onboard"
