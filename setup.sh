@@ -1,13 +1,10 @@
 #!/bin/bash
-
 set -e
-
 echo ""
 echo "=================================================="
 echo "  OpenClaw 자동 설치 스크립트"
 echo "=================================================="
 echo ""
-
 # ── 1. Homebrew ──────────────────────────────────────
 echo "▶ [1/4] Homebrew 설치 중..."
 if ! command -v brew &>/dev/null; then
@@ -23,7 +20,6 @@ if ! command -v brew &>/dev/null; then
 else
   echo "✅ Homebrew 이미 설치되어 있음 — 건너뜀"
 fi
-
 # ── 2. Node 24 ───────────────────────────────────────
 echo ""
 echo "▶ [2/4] Node 24 설치 중..."
@@ -36,14 +32,12 @@ else
 fi
 echo ""
 node -v && npm -v
-
 # ── 3. OpenClaw 설치 ─────────────────────────────────
 echo ""
 echo "▶ [3/4] OpenClaw 설치 중..."
-sudo npm install -g openclaw@2026.6.6
+sudo npm install -g openclaw@2026.7.1
 source ~/.zprofile 2>/dev/null || true
-echo "✅ OpenClaw 2026.6.6 설치 완료"
-
+echo "✅ OpenClaw 2026.7.1 설치 완료"
 # ── 4. Codex 의존성 설치 ─────────────────────────────
 echo ""
 echo "▶ [4/4] Codex 의존성 설치 중..."
@@ -55,7 +49,6 @@ if [[ -n "$CODEX_DIR" ]]; then
 else
   echo "⚠️  Codex 디렉토리 없음 — onboard 후 자동 처리됩니다"
 fi
-
 echo ""
 echo "=================================================="
 echo "  🎉 설치 완료!"
