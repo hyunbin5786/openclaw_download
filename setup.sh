@@ -70,9 +70,9 @@ fi
 # ── 4. OpenClaw 설치 ─────────────────────────────────
 echo ""
 echo "▶ [4/6] OpenClaw 설치 중..."
-sudo npm install -g openclaw@2026.6.10
+sudo npm install -g openclaw@2026.7.1
 source ~/.zprofile 2>/dev/null || true
-echo "✅ OpenClaw 2026.6.10 설치 완료"
+echo "✅ OpenClaw 2026.7.1 설치 완료"
 
 # ── 5. 권한 정리 ─────────────────────────────────────
 # sudo npm install을 쓰면 ~/.npm 캐시에 root 소유 파일이 생겨
