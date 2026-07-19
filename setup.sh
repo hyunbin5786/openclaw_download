@@ -104,8 +104,4 @@ echo "  현재 터미널을 닫고 새로운 터미널에서 아래 명령어로
 echo ""
 echo "    openclaw onboard --classic"
 echo ""
-echo "  ※ 게이트웨이가 시작되지 않을 때 점검 순서:"
-echo "    openclaw doctor"
-echo "    openclaw gateway restart"
-echo "    openclaw gateway status --deep"
 echo "=================================================="
